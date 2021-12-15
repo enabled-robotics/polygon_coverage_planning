@@ -20,7 +20,8 @@
   <depend>polygon_coverage_msgs</depend>
   <depend>polygon_coverage_geometry</depend>
   <depend>geometry_msgs</depend>
-  <depend>cgal_catkin</depend>
+<!--  <depend>cgal_catkin</depend>-->
+  <depend>CGAL</depend>
 
   <export>
     <rviz plugin="${prefix}/plugin_description.xml"/>
