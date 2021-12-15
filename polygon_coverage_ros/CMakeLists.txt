@@ -28,17 +28,17 @@ else()
 endif()
 
 # Download test instances.
-include(ExternalProject)
-ExternalProject_Add(
-  pwh_instances
-  URL https://polybox.ethz.ch/index.php/s/7J5HPRR6lM22TnK/download
-  DOWNLOAD_NAME pwh.tar.gz
-  URL_MD5 87b964a974f6a8dd174dfe393b631a61
-  UPDATE_COMMAND ""
-  CONFIGURE_COMMAND ""
-  BUILD_COMMAND ""
-  INSTALL_COMMAND ""
-)
+#include(ExternalProject)
+#ExternalProject_Add(
+#  pwh_instances
+#  URL https://polybox.ethz.ch/index.php/s/7J5HPRR6lM22TnK/download
+#  DOWNLOAD_NAME pwh.tar.gz
+#  URL_MD5 87b964a974f6a8dd174dfe393b631a61
+#  UPDATE_COMMAND ""
+#  CONFIGURE_COMMAND ""
+#  BUILD_COMMAND ""
+#  INSTALL_COMMAND ""
+#)
 
 #############
 # LIBRARIES #
