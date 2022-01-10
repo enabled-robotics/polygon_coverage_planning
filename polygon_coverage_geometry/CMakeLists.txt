@@ -30,38 +30,38 @@ cs_add_library(${PROJECT_NAME}
 )
 target_link_libraries(${PROJECT_NAME} ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES})
 
-#########
-# TESTS #
-#########
-catkin_add_gtest(test_bcd
-  test/bcd-test.cpp
-)
-target_link_libraries(test_bcd ${PROJECT_NAME})
+# #########
+# # TESTS #
+# #########
+# catkin_add_gtest(test_bcd
+#   test/bcd-test.cpp
+# )
+# target_link_libraries(test_bcd ${PROJECT_NAME})
 
-catkin_add_gtest(test_cgal_comm
-  test/cgal_comm-test.cpp
-)
-target_link_libraries(test_cgal_comm ${PROJECT_NAME})
+# catkin_add_gtest(test_cgal_comm
+#   test/cgal_comm-test.cpp
+# )
+# target_link_libraries(test_cgal_comm ${PROJECT_NAME})
 
-catkin_add_gtest(test_offset
-  test/offset-test.cpp
-)
-target_link_libraries(test_offset ${PROJECT_NAME})
+# catkin_add_gtest(test_offset
+#   test/offset-test.cpp
+# )
+# target_link_libraries(test_offset ${PROJECT_NAME})
 
-catkin_add_gtest(test_sweep
-  test/sweep-test.cpp
-)
-target_link_libraries(test_sweep ${PROJECT_NAME})
+# catkin_add_gtest(test_sweep
+#   test/sweep-test.cpp
+# )
+# target_link_libraries(test_sweep ${PROJECT_NAME})
 
-catkin_add_gtest(test_visibility_graph
-  test/visibility_graph-test.cpp
-)
-target_link_libraries(test_visibility_graph ${PROJECT_NAME})
+# catkin_add_gtest(test_visibility_graph
+#   test/visibility_graph-test.cpp
+# )
+# target_link_libraries(test_visibility_graph ${PROJECT_NAME})
 
-catkin_add_gtest(test_visibility_polygon
-  test/visibility_polygon-test.cpp
-)
-target_link_libraries(test_visibility_polygon ${PROJECT_NAME})
+# catkin_add_gtest(test_visibility_polygon
+#   test/visibility_polygon-test.cpp
+# )
+# target_link_libraries(test_visibility_polygon ${PROJECT_NAME})
 
 ##########
 # EXPORT #

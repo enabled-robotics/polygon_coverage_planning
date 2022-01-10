@@ -74,10 +74,10 @@ cs_add_executable(shortest_path_planner
 )
 target_link_libraries(shortest_path_planner ${PROJECT_NAME})
 
-cs_add_executable(sweep_test
-  test/sweep_test_node.cc
-)
-target_link_libraries(sweep_test ${PROJECT_NAME})
+# cs_add_executable(sweep_test
+#   test/sweep_test_node.cc
+# )
+# target_link_libraries(sweep_test ${PROJECT_NAME})
 
 ##########
 # EXPORT #

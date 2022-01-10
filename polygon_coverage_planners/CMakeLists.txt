@@ -31,13 +31,13 @@ cs_add_library(${PROJECT_NAME}
 )
 target_link_libraries(${PROJECT_NAME} ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES})
 
-#########
-# TESTS #
-#########
-catkin_add_gtest(test_planners
-  test/planners-test.cpp
-)
-target_link_libraries(test_planners ${PROJECT_NAME})
+# #########
+# # TESTS #
+# #########
+# catkin_add_gtest(test_planners
+#   test/planners-test.cpp
+# )
+# target_link_libraries(test_planners ${PROJECT_NAME})
 
 ##########
 # EXPORT #
