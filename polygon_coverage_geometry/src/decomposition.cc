@@ -105,7 +105,7 @@ bool computeBestBCDFromPolygonWithHoles(const PolygonWithHoles& pwh,
   double min_altitude_sum = std::numeric_limits<double>::max();
 
   // Get all possible decomposition directions.
-  std::vector<Direction_2> directions = findPerpEdgeDirections(pwh);
+  std::vector<Direction_2> directions = {Direction_2(1, 0)};//findPerpEdgeDirections(pwh);
 
   // For all possible rotations:
   for (const auto& dir : directions) {
