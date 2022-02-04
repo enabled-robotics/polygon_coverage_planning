@@ -4,6 +4,7 @@ project(polygon_coverage_geometry)
 find_package(catkin_simple REQUIRED)
 catkin_simple(ALL_DEPS_REQUIRED)
 
+set(CGAL_DONT_OVERRIDE_CMAKE_FLAGS TRUE CACHE BOOL "Don't override flags")
 find_package(CGAL QUIET COMPONENTS Core)
 include(${CGAL_USE_FILE})
 

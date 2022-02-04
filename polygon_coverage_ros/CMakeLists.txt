@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 set(CMAKE_BUILD_TYPE Release)
-
+set(CGAL_DONT_OVERRIDE_CMAKE_FLAGS TRUE CACHE BOOL "Don't override flags")
 find_package(CGAL QUIET COMPONENTS Core)
 include(${CGAL_USE_FILE})
 
